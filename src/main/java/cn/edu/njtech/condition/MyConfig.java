@@ -1,4 +1,4 @@
-package cn.edu.njtech.Condition;
+package cn.edu.njtech.condition;
 
 import cn.edu.njtech.entity.Person;
 import lombok.extern.slf4j.Slf4j;

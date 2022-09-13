@@ -1,4 +1,4 @@
-package cn.edu.njtech.Condition;
+package cn.edu.njtech.condition;
 
 import org.springframework.context.annotation.Condition;
 import org.springframework.context.annotation.ConditionContext;
@@ -9,7 +9,7 @@ import java.util.Map;
 public class MyOnPropertyCondition implements Condition {
     @Override
     public boolean matches(ConditionContext context, AnnotatedTypeMetadata metadata) {
-        Map<String, Object> annotationAttributes = metadata.getAnnotationAttributes(cn.edu.njtech.Condition.MyConditionalOnProperty.class.getName());
+        Map<String, Object> annotationAttributes = metadata.getAnnotationAttributes(cn.edu.njtech.condition.MyConditionalOnProperty.class.getName());
         String propertyName = (String) annotationAttributes.get("value");
         String value = (String) annotationAttributes.get("havingValue");
         String propertyValue = context.getEnvironment().getProperty(propertyName);

@@ -1,4 +1,4 @@
-package cn.edu.njtech.Condition;
+package cn.edu.njtech.condition;
 
 import org.springframework.context.annotation.Conditional;
 
